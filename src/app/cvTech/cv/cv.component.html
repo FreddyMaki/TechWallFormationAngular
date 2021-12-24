@@ -1,0 +1,14 @@
+<!-- <router-outlet></router-outlet> -->
+<p>CV works!</p>
+
+<div class="row">
+
+  <div class="col-md-6 col-sm-3">
+    <app-liste-cv (selectedPerson)="selectPerson($event)" [personne]="personList"></app-liste-cv>
+  </div>
+
+  <div  class="col-md-6 col-sm-9">
+    <app-detail-cv *ngIf="selectedPerson" [personne]="selectedPerson"></app-detail-cv>
+  </div>
+  <app-embauche></app-embauche>
+</div>

@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "AndyDB": {
+    "host": "192.168.50.51",
+    "port": "5432",
+    "url": "",
+    "database": "anguForma",
+    "password": "1234",
+    "name": "AndyDB",
+    "user": "postgres",
+    "connector": "postgresql"
+  }
+}

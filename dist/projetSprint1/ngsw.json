@@ -1,0 +1,120 @@
+{
+  "configVersion": 1,
+  "timestamp": 1637053947544,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.9a3880dc8d57814deaa4.js",
+        "/manifest.webmanifest",
+        "/polyfills.e39438170811028a1e35.js",
+        "/runtime.2ac7c5b84c0792a167b5.js",
+        "/styles.ddfd6d00724932825026.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/css/rotating-card.css",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/cv_logo.png",
+        "/assets/images/dictator.png",
+        "/assets/images/error_404.jfif",
+        "/assets/images/mr_bean.png",
+        "/assets/images/rotating_card_profile.png",
+        "/assets/images/rotating_card_profile3.png",
+        "/assets/images/rotating_card_thumb.jpg",
+        "/assets/images/rotating_card_thumb.png",
+        "/assets/images/rotating_card_thumb2.png",
+        "/assets/images/rotating_card_thumb3.png",
+        "/assets/images/tim_logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "apiPersonne",
+      "patterns": [
+        "http:\\/\\/localhost:3000\\/api\\/personnes\\/[^/]*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 172800000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/css/rotating-card.css": "cee9339a3f886f28170b1a941bbe5c7f23b3a79b",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/cv_logo.png": "41211636813fdd4ef0d0ba0858a954c91baf7623",
+    "/assets/images/dictator.png": "2408851706a98bac6a73ea7c8509bfc41f6ec90d",
+    "/assets/images/error_404.jfif": "b4c538ea41ee878ce2006bb5e19ed94511d37919",
+    "/assets/images/mr_bean.png": "cdca4ac984fe555593ef28cdcee7a5bd3d0cfd90",
+    "/assets/images/rotating_card_profile.png": "b30414d614f9b735a7232caebb69867ebfc5503e",
+    "/assets/images/rotating_card_profile3.png": "4c19034d68811fa2d84289bc75f7b7fca39ae39c",
+    "/assets/images/rotating_card_thumb.jpg": "7d492d6134a7d0cf3de07f5dfad49c0d3fcd2886",
+    "/assets/images/rotating_card_thumb.png": "853764dcf8a8955af43b6b2e3d22155f34e7d1e5",
+    "/assets/images/rotating_card_thumb2.png": "cec9f69aa3e5c38cee1444e9acf0c9ee7373235b",
+    "/assets/images/rotating_card_thumb3.png": "74d51b80c1f3cf44b20c6ef610b31b92460d9df9",
+    "/assets/images/tim_logo.png": "badc53cc7844979e5a9d65acebfc9b235f4f4dd9",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "9dc2f39ff2de3ff071de8ed1dbd37f686e808feb",
+    "/main.9a3880dc8d57814deaa4.js": "29b6226c66930f55878d05d38d821da53f0e7afe",
+    "/manifest.webmanifest": "278723367a5bc87b54f592136233620e1cac4263",
+    "/polyfills.e39438170811028a1e35.js": "e36f2d639eea766c6abff899a6ff15e645ba815f",
+    "/runtime.2ac7c5b84c0792a167b5.js": "1af8aaab645f0f4fb760e038a13b5cf00dc90e80",
+    "/styles.ddfd6d00724932825026.css": "a28ca2910b53332eed40952052ad5eb3d123bbbe"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

@@ -1,0 +1,18 @@
+<input
+  #inputs
+  [(ngModel)] = "inputSearch"
+  class="form-control"
+  (keyup)="search(inputSearch)"
+  placeholder="Recherche">
+
+  <ol>
+    <li *ngFor="let item of searchResult" class="list-group-item" (click)="selectPerson(item)">
+      <img (click)="inputs.value = ''" class="rounded-circle"
+        src="{{item.path|defaultImage}}"
+        width="25px" height="25px"
+        alt="{{item.firstname}}">{{item.firstname}}{{item|json}}
+    </li>
+
+  </ol>
+
+

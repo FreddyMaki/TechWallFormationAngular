@@ -1,0 +1,30 @@
+<!-- On va faire en sorte que Angular détecte ce formulaire en lui donnant comme attribut ngForm et propriété ngModel dans Input -->
+
+
+
+<form #formulaire="ngForm" *ngIf="personne">
+  <label for="inputName">Name</label>
+  <input required type="text" [(ngModel)]="personne.name" name="name" class="form-control">
+
+  <label for="inputFirstName">First name</label>
+  <input required id="inputFirstName" type="text" [(ngModel)]="personne.firstname" name="firstname" class="form-control">
+
+  <label for="inputjob">job</label>
+  <input  required id="inputjob" type="text" [(ngModel)]="personne.job" name="job" class="form-control">
+
+  <label for="inputAge">Age</label>
+  <input required min="0" max="170" id="inputAge" type="number" [(ngModel)]="personne.age" name="age" class="form-control">
+
+  <label for="inputCin">Cin</label>
+  <input required id="inputCin" type="number" [(ngModel)]="personne.cin" name="cin" class="form-control">
+
+  <!-- required, dans add.css j'ai mis ng-invalid avec la couleur red -->
+  <label  for="inputPath">path</label>
+  <input  id="inputPath" type="text" [(ngModel)]="personne.path" name="path"class="form-control">
+
+  <button  [disabled]="formulaire.invalid" (click)="updatePersonne()" class="btn btn-primary">Envoyer</button>
+
+
+</form>
+
+
