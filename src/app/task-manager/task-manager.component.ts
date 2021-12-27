@@ -19,14 +19,21 @@ export class TaskManagerComponent implements OnInit {
     //INITIALISATION:
     this.todo = [
       new Todo(1,'Lundi', 'Pick up groceries', 'done'),
-      new Todo(1,'Mardi', 'Take a shower', 'done')
+      new Todo(2,'Mardi', 'Take a shower', 'done'),
+      new Todo(3,'Wednesday', 'pick keys', 'doing')
     ];
+
+    // this.doing = [
+    //   new Todo(1,'Lundi', 'Pick up groceries', 'done'),
+    //   new Todo(1,'Mardi', 'Take a shower', 'done'),
+    //   new Todo(1,'Friday', 'pick keys', 'doing')
+    // ];
   }
 
   //Drag and drop example
 
 
-  // todos = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+  //doing = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
   // done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
 
   drop(event: CdkDragDrop<Todo[], any, any>) {
