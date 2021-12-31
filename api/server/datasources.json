@@ -3,14 +3,14 @@
     "name": "db",
     "connector": "memory"
   },
-  "AndyDB": {
-    "host": "192.168.50.51",
-    "port": "5432",
+  "FormationAngularTechWallDataSource": {
+    "host": "localhost",
+    "port": "3306",
     "url": "",
-    "database": "anguForma",
-    "password": "1234",
-    "name": "AndyDB",
-    "user": "postgres",
-    "connector": "postgresql"
+    "password": "",
+    "database":"FormationAngularTechWallDB",
+    "user": "root",
+    "connector": "mysql"
   }
+
 }

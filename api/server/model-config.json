@@ -36,10 +36,10 @@
     "public": false
   },
   "Note": {
-    "dataSource": "db"
+    "dataSource": "FormationAngularTechWallDataSource"
   },
   "personne": {
-    "dataSource": "AndyDB",
+    "dataSource": "FormationAngularTechWallDataSource",
     "public": true
   }
 }
