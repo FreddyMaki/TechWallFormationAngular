@@ -2,39 +2,51 @@
   <div class="col-md-4 col-sm-4" >
     <h2 cdkDrag>TODO</h2>
     <div
-    class="dragList"
+    class="todo dragList"
       cdkDropList
       #todoList="cdkDropList"
       [cdkDropListData]="todo"
       [cdkDropListConnectedTo]="[doingList,doneList]"
       (cdkDropListDropped)="drop($event)">
-      <div class="alert alert-danger" *ngFor="let item of todo" cdkDrag>{{item.title}} : {{item.content}}</div>
+      <div class="alert alert-danger"
+          *ngFor="let item of todo"
+          cdkDrag
+          [cdkDragData]="item"
+      >{{item.title}} : {{item.content}}</div>
     </div>
   </div>
 
   <div class="col-md-4 col-sm-4" >
     <h2>DOING</h2>
     <div
-    class="dragList"
+    class="doing dragList"
       cdkDropList
       #doingList="cdkDropList"
       [cdkDropListData]="doing"
       [cdkDropListConnectedTo]="[todoList,doneList]"
       (cdkDropListDropped)="drop($event)">
-      <div class="alert alert-primary" *ngFor="let item of doing" cdkDrag>{{item.title}} : {{item.content}}</div>
+      <div class="alert alert-primary"
+          *ngFor="let item of doing"
+          cdkDrag
+          [cdkDragData]="item"
+      >{{item.title}} : {{item.content}}</div>
     </div>
   </div>
 
   <div class="col-md-4 col-sm-4" >
     <h2>DONE</h2>
     <div
-     class="dragList"
+     class="done dragList"
       cdkDropList
       #doneList="cdkDropList"
       [cdkDropListData]="done"
       [cdkDropListConnectedTo]="[todoList, doingList]"
       (cdkDropListDropped)="drop($event)">
-      <div class="alert alert-success" *ngFor="let item of done" cdkDrag>{{item.title}} : {{item.content}}</div>
+      <div class="alert alert-success"
+          *ngFor="let item of done"
+          cdkDrag
+          [cdkDragData]="item"
+          >{{item.title}} : {{item.content}}</div>
     </div>
   </div>
 
